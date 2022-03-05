@@ -33,7 +33,7 @@ function App() {
     <Switch>
     <ThemeProvider theme={darkMode ? Theme : Theme2}>
       <GlobalStyle />
-      <Navbar/>
+      <Navbar darkMode={darkMode} swapTheme={swapTheme}/>
       <AppContainer>
         
       </AppContainer>
