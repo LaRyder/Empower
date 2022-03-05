@@ -15,6 +15,7 @@ export const Theme = { //DAY
     lemon: '#14A098',
     yellow: '#CB2D6F',
     font: '#011910',
-    black: '#fff4e6',
+    // black: '#fff4e6',
+    black: '#000000',
     nav: '#FFFFFF'
 }; 

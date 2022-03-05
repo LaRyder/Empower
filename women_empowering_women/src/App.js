@@ -6,6 +6,7 @@ import GlobalStyle from './Styles/globalTheme';
 import { Theme, Theme2 } from './Styles/themes'
 
 import Navbar from './Components/Navbar';
+import Hero from './Views/Display';
 
 
 const AppContainer = styled.div`
@@ -35,7 +36,7 @@ function App() {
       <GlobalStyle />
       <Navbar darkMode={darkMode} swapTheme={swapTheme}/>
       <AppContainer>
-        
+      <Route exact path="/" component={Hero} />
       </AppContainer>
      
     </ThemeProvider>
