@@ -17,15 +17,27 @@ display: flex;
 }
 .heroText {
     text-align: left;
-    color: red;
+    color: white;
     font-size: 12rem;
-    margin-top: 18rem;
+    margin-top: 22rem;
+    margin-bottom: 5rem;
     @media(max-width: 800px) {
         margin: 0;
         font-size: 6rem;
     }
+    .topRow {
+        background-color: #f4f3db;
+        color: black;
+        padding-right: 40px;
+        @media(max-width: 800px){
+            font-size: 4.5rem;
+            margin-top: 3rem;
+        }
+    }
     .bottonRow {
-        color: blue;
+        background-color: #edece2;
+        color: black;
+        font-style: oblique;
         @media(max-width: 800px){
             font-size: 4.5rem;
             margin-top: 3rem;
