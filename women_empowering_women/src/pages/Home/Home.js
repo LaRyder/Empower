@@ -2,18 +2,17 @@ import React from "react";
 import "./Home.css";
 import Success from "./Success";
 import TrainingPeer from "./Training and Peer";
+import Hero from "./HeroBanner"
 
 export default class Home extends React.Component {
     render () {
         return (
             <div className="body">
-                <header className="header">
-                    <h1> <b><i>Let's</i></b> hear it for the <b>BOSSY ONES</b>. For those <b>LOUD, PROUD</b> women who STAND UP and speak out. </h1>
-                </header>
+                <Hero/>
                 <div className="stories-section">
                 <h1>Success Stories</h1>
                 <div className="success">
-                   
+        
                 <Success/>
                 <Success/>
                 <Success/>
@@ -29,5 +28,7 @@ export default class Home extends React.Component {
                 </div>
             </div>
         );
+        
+       
     }  
 }
