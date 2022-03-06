@@ -8,3 +8,17 @@
 
 .footNote {
 }
+
+.success{
+  display:flex ;
+  justify-content: space-evenly;
+}
+.stories-section h1{
+text-align: center;
+padding-bottom: 20px;
+color: #ffff;
+}
+.stories-section{
+  background-color: #314455;
+  padding: 20px;
+}
