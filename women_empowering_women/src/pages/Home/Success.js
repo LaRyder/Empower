@@ -1,4 +1,5 @@
 import React, {useState, useEffect}from 'react';
+import { Link } from "react-router-dom";
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
@@ -13,12 +14,13 @@ color:#ffff;
 
 `;
 
-const Learn = styled(Button)`
+const Learn = styled(Link)`
 padding:5px 10px;
 background: #C96567;
 border-radius: 10px;
 text-transform: capitalize;
 color:#ffff;
+text-decoration: none;
 
 `;
 
@@ -69,7 +71,7 @@ export default function Success() {
          {item.tagline}
         </Typography>
         <CardActions>
-        <Learn size="small">Learn More</Learn>
+        <Learn to="/share">Read More...</Learn>
       </CardActions>
       </CardContents>
      
