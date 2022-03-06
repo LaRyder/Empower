@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState, useEffect}from 'react';
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
@@ -23,23 +23,50 @@ color:#ffff;
 `;
 
 
+
+
 export default function Success() {
+  const [error, setError] = useState(null);
+  const [isLoaded, setIsLoaded] = useState(false);
+  const [items, setItems] = useState([]);
+
+  useEffect(() => {
+    fetch("http://localhost:3002/posts")
+      .then(res => res.json())
+      .then(
+        (result) => {
+          setIsLoaded(true);
+          console.log(result)
+          setItems(result);
+        },
+        
+        (error) => {
+          setIsLoaded(true);
+          setError(error);
+        }
+      )
+  }, [])
+  if (error) {
+    return <div>Error: {error.message}</div>;
+  } else if (!isLoaded) {
+    return <div>Loading...</div>;
+  } else {
   return (
-      <div>
+      <div className='cards' style={{display:'flex', justifyContent:'space-evenly',width:'100%'}}>
+        {items.map(item =>(
     <Card sx={{ maxWidth: 345 }}>
       <CardMedia
         component="img"
         height="140"
-        image="https://bit.ly/35rJq8c"
-        alt="green iguana"
+        image={item.image}
+        alt="tech"
       />
       <CardContents>
         <Typography gutterBottom variant="h5" component="div">
-          Lizard
+          {item.title}
         </Typography>
         <Typography variant="body2" color="#ffff">
-          Lizards are a widespread group of squamate reptiles, with over 6,000
-          species, ranging across all continents except Antarctica
+         {item.tagline}
         </Typography>
         <CardActions>
         <Learn size="small">Learn More</Learn>
@@ -47,8 +74,9 @@ export default function Success() {
       </CardContents>
      
     </Card>
+    ))}
     </div>
   );
 }
-
+}
 
