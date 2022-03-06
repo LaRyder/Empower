@@ -13,7 +13,7 @@ export default class NavBar extends React.Component {
                 <Link className="navButton" to="/">Home</Link>
                 <Link className="navButton" to="ContactMe">About</Link>
                 <Link className="navButton" to="About">Mentor</Link>
-                <Link className="navButton" to="Resume">Share Your Story</Link>
+                <Link className="navButton" to="/share" >Share Your Story</Link>
               </div>
             </ul>
           </div>
