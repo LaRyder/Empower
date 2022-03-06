@@ -43,7 +43,7 @@ export default function Share () {
           </section>
           </div>
             ))}
-          <ShareForm />
+          {/* <ShareForm /> */}
         </div>
     );
   

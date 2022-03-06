@@ -21,8 +21,8 @@ function App() {
       <Routes>
         <Route path="/"element={<Home />} />
         <Route path="About" element={<About />} />
-        <Route path="Mentor" element={<Mentor />} />
-        <Route path="Share Your Story" element={<Share />} />
+        <Route path="/Mentor" element={<Mentor />} />
+        <Route path="/share" element={<Share />} />
       </Routes>
       </AppContainer>
       <Footer/>
