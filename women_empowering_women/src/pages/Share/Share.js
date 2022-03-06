@@ -2,7 +2,14 @@ import React, {useState, useEffect} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Share.css';
 import ShareForm from "./ShareForm"
+import styled from '@emotion/styled';
 
+
+const Section = styled.section`
+text-align:justify;
+font-size:18px;
+line-height:50px;
+`
 export default function Share () {
   const [error, setError] = useState(null);
   const [isLoaded, setIsLoaded] = useState(false);
@@ -31,16 +38,16 @@ export default function Share () {
   } else {
   
     return (
-      <div className="container">
-          <h1 className='header'>Share Your Story</h1>
+      <div className="container" >
+         
           {items.map(item =>(
-            <div>
-          <h1>{item.title}</h1>
-          <small>By {item.name}</small>
-          <img src={item.image} alt='tech'style={{width:'20%'}}/>
-          <section>
+            <div key={item.id} style={{padding:'20px', textAlign:'center'}}>
+          <h2>{item.title}</h2>
+          <h4 style={{fontStyle:'italic'}}>By {item.name}</h4>
+          <img src={item.image} alt='tech'style={{width:'30%'}}/>
+          <Section>
             {item.body}
-          </section>
+          </Section>
           </div>
             ))}
           {/* <ShareForm /> */}
