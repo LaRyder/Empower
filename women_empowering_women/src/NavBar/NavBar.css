@@ -1,0 +1,33 @@
+.navContainer {
+  background-color: black;
+  overflow-x: hidden;
+}
+
+.headerInner {
+  margin-left: 10%;
+  padding-top: 10px;
+}
+
+.links {
+  letter-spacing: 0.1em;
+  font-size: x-large;
+  text-transform: uppercase;
+  text-align: center;
+  margin-right: 10%;
+}
+
+.navButton {
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  text-transform: uppercase;
+  padding: 12px;
+}
+
+.navButton:hover {
+  background-color: gray;
+}
+
+.navbar:a.active {
+  background-color: white;
+}

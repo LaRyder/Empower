@@ -1,0 +1,60 @@
+body {
+  background: #e9f1fe;
+}
+
+.share-form {
+  position: absolute;
+  background: lightpink;
+  color: #fff;
+  font-family: sans-serif;
+  font-size: larger;
+  padding: 30px;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 11px 15px -7px rgb(0 0 0 / 20%),
+    0 24px 38px 3px rgb(0 0 0 / 14%), 0 9px 46px 8px rgb(0 0 0 / 12%);
+  width: 50%;
+  height: 50%;
+}
+
+input,
+textarea {
+  width: 100%;
+  border: 0;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+.theLi {
+  text-align: center;
+}
+
+.theButton {
+  width: 100%;
+  padding: 10px;
+  border: 0;
+  cursor: pointer;
+  font-weight: bold;
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+span {
+  display: none;
+  text-align: center;
+}
+
+.visible {
+  display: block;
+}
