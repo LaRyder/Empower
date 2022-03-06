@@ -20,11 +20,11 @@ export default function Peer(){
         <Div>
             <h1 style={{color:'black'}}>Peer Groups</h1>
             <Image src="https://bit.ly/3CictH6" alt="adc" />
-            <ExternalLink href="https://www.meetup.com/microsoft-africa-development-center/" style={{textDecoration:'none', color:'black'}}><h5>Microsoft ADC</h5> </ExternalLink>
+            <ExternalLink href="https://www.meetup.com/microsoft-africa-development-center/" style={{textDecoration:'underline', color:'black'}}><h5>Microsoft ADC</h5> </ExternalLink>
             <Image src="https://bit.ly/3sUQumJ" alt="js" />
-            <ExternalLink href="https://www.meetup.com/nairobi-js/" style={{textDecoration:'none', color:'black'}}><h5>Nairobi JavaScript Community</h5> </ExternalLink> 
+            <ExternalLink href="https://www.meetup.com/nairobi-js/" style={{textDecoration:'underline', color:'black'}}><h5>Nairobi JavaScript Community</h5> </ExternalLink> 
             <Image src="https://bit.ly/3Ko9Fey" alt="gdg" />
-            <ExternalLink href="https://www.meetup.com/GDG-Cloud-Nairobi/" style={{textDecoration:'none', color:'black'}}><h5>GDG Cloud Nairobi</h5> </ExternalLink> 
+            <ExternalLink href="https://www.meetup.com/GDG-Cloud-Nairobi/" style={{textDecoration:'underline', color:'black'}}><h5>GDG Cloud Nairobi</h5> </ExternalLink> 
         </Div>
     )
 }
