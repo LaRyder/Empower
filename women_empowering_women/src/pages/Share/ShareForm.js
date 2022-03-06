@@ -40,9 +40,9 @@ const submit = () => {
     <div className="share-form">
       <ul>
         <li className="theLi"><input type="text" placeholder="Name" value={name} onChange={e => setName(e.target.value)} /></li>
-        <li className="theLi"><input type="text" placeholder="Origin" value={origin} onChange={e => setOrigin(e.target.value)} /></li>
-        <li className="theLi"><input type="titexttle" placeholder="Title" value={title} onChange={e => setTitle(e.target.value)} /></li>
-        <li className="theLi"><textarea placeholder="text" value={message} onChange={e => setMessage(e.target.value)}></textarea></li>
+        <li className="theLi"><input type="origin" placeholder="Origin" value={origin} onChange={e => setOrigin(e.target.value)} /></li>
+        <li className="theLi"><input type="title" placeholder="Title" value={title} onChange={e => setTitle(e.target.value)} /></li>
+        <li className="theLi"><textarea placeholder="message" value={message} onChange={e => setMessage(e.target.value)}></textarea></li>
         <li className="theLi"><button className="theButton" onClick={submit}>Send Message</button></li>
         <li className="theLi"><span className={emailSent ? 'visible' : null}>Thank you for your message, we will be in touch in no time!</span></li>
       </ul>
