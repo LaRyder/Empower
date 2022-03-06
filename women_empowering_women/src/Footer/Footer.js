@@ -3,6 +3,7 @@ import { FooterMain, FooterDivLink, StyledFooter } from "./FooterStyle";
 
 import Twitter from '../images/Twitter.png'
 import LinkedIn from '../images/linkedin.png'
+import Facebook from '../images/facebook.png'
 
 const Footer = () => {
     const scrollToTop = () => {
@@ -20,7 +21,7 @@ const Footer = () => {
             <FooterDivLink>
             <div className="sm-icons">
 				<a><img src={Twitter} alt="Twitter" /></a>
-                <a> <img src={Twitter}  alt="Facebook" /></a>
+                <a> <img src={Facebook} style={{width:'30px'}}  alt="Facebook" /></a>
                 <a> <img src={LinkedIn}  alt="LinkedIn" /></a>
             </div>
                 <div>#BreakTheBias</div>
