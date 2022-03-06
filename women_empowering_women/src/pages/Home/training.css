@@ -1,0 +1,15 @@
+.images{
+    width: 305px;
+height: 150px;
+   
+}
+.program1{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    color: black;
+}
+.all-programs{
+    width: 40%;
+    padding: 20px;
+}

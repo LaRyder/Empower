@@ -1,6 +1,7 @@
 import React from "react";
 import "./Home.css";
 import Success from "./Success";
+import TrainingPeer from "./Training and Peer";
 
 export default class Home extends React.Component {
     render () {
@@ -19,7 +20,7 @@ export default class Home extends React.Component {
                 </div>
                 </div>
 
-
+                <TrainingPeer/>
 
                 <div className="footNote">
                 <footer>
