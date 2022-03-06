@@ -1,15 +1,21 @@
 import React from 'react';
-import {HeroBanner} from './HeroBannerStyle.js';
+import {HeroLauren, HeroBrenda, HeroSynthia, ImageDiv, Share} from './HeroBannerStyle.js';
 
 function Hero() {
     return (
         <>
-        <HeroBanner>
+        <ImageDiv>
+        <HeroBrenda/>
+        <HeroLauren>
         <div className="heroText">
                 <h1 className="topRow">Empower Women</h1>
-                <h2 className="topRow">Break The Bias</h2>
+                <h2 className="bottonRow">Break The Bias</h2>
             </div>
-        </HeroBanner>
+        </HeroLauren>
+        <HeroSynthia>
+        <Share size="small">Share Your Story</Share>
+        </HeroSynthia>
+        </ImageDiv>
     
         </>
         
