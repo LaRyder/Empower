@@ -1,6 +1,7 @@
 import React from "react";
 import "./Home.css";
 import Success from "./Success";
+import TrainingPeer from "./Training and Peer";
 import Hero from "./HeroBanner"
 
 export default class Home extends React.Component {
@@ -18,7 +19,7 @@ export default class Home extends React.Component {
                 </div>
                 </div>
 
-
+                <TrainingPeer/>
 
                 <div className="footNote">
                 <footer>
