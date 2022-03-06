@@ -5,7 +5,7 @@ import Brenda from '../../images/Brenda.jpeg';
 export const HeroBanner = styled.div`
 width: 100%;
 height: 480px;
-background: (url(${lauren}) right, url(${Brenda}) left);
+background: url(${lauren});
 background-size: cover;
 display: flex;
 flex-direction: row-reverse;
