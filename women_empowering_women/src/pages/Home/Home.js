@@ -20,12 +20,6 @@ export default class Home extends React.Component {
                 </div>
 
                 <TrainingPeer/>
-
-                <div className="footNote">
-                <footer>
-                    <h1>For their confidence <b>AND</b> imperfection, <b>THEIR STRENGTH</b> and vulnerability. Let's <b>HEAR</b> it for <u><i>us!</i></u> </h1>
-                </footer>
-                </div>
             </div>
         );
         
