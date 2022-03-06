@@ -11,7 +11,6 @@ export default class NavBar extends React.Component {
             <ul>
               <div className="links">
                 <Link className="navButton" to="/">Home</Link>
-                <Link className="navButton" to="/ContactMe">About</Link>
                 <Link className="navButton" to="/mentor">Mentor</Link>
                 <Link className="navButton" to="/share" >Share Your Story</Link>
               </div>
