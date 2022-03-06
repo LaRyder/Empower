@@ -7,6 +7,7 @@ import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import { styled } from '@mui/material/styles';
+import Share from '../Share/Share';
 
 const CardContents = styled(CardContent)`
 background: rgba(16, 16, 16, 0.9);
@@ -71,7 +72,7 @@ export default function Success() {
          {item.tagline}
         </Typography>
         <CardActions>
-        <Learn to="/share">Read More...</Learn>
+        <Learn to="/share" key={item.id}>Read More...</Learn>
       </CardActions>
       </CardContents>
      
