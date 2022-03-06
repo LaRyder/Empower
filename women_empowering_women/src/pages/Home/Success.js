@@ -30,16 +30,15 @@ export default function Success() {
       <CardMedia
         component="img"
         height="140"
-        image="https://bit.ly/35rJq8c"
-        alt="green iguana"
+        image="https://bit.ly/36W7wbg"
+        alt="tech"
       />
       <CardContents>
         <Typography gutterBottom variant="h5" component="div">
-          Lizard
+          My Journey into Tech
         </Typography>
         <Typography variant="body2" color="#ffff">
-          Lizards are a widespread group of squamate reptiles, with over 6,000
-          species, ranging across all continents except Antarctica
+         You cannot understand everything, but you can understand the system
         </Typography>
         <CardActions>
         <Learn size="small">Learn More</Learn>

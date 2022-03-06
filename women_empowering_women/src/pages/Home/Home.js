@@ -14,7 +14,7 @@ export default class Home extends React.Component {
                 <div className="success">
         
                 <Success/>
-                <Success/>
+                <Success />
                 <Success/>
                 </div>
                 </div>
