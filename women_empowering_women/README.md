@@ -5,7 +5,7 @@ React is the main framework used with various dependencies. To run the project, 
 ### `npm start` to run the project
 
 To run the server, run:
-### `json-server --watch db.json`
+### `json-server --watch db.json --port 3002`
 
 Here is a link to the slides for our presentation
 https://docs.google.com/presentation/d/1U1RrNx4zX66d6PX-oJMncps4o0ZOlW3_JuXyX8OTWhQ/edit?usp=sharing
